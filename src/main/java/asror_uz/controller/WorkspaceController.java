@@ -21,6 +21,7 @@ public class WorkspaceController {
         return service.create(dto);
     }
 
+
     @GetMapping("/{id}")
     public Workspace byId(@PathVariable Long id){
         Workspace byId = service.getById(id);
