@@ -38,6 +38,7 @@ public class WorkspaceController {
         return service.update(id, dto);
     }
 
+
     @DeleteMapping("/{id}")
     public Result delete(@PathVariable Long id){
         return service.delete(id);
