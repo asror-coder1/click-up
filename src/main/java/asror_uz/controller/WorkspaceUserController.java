@@ -32,6 +32,7 @@ public class WorkspaceUserController {
         return all;
     }
 
+
     @PutMapping("/{id}")
     public Result edit(@PathVariable Long id , @RequestBody WorkspaceUserDto dto){
        return service.update(id , dto);
