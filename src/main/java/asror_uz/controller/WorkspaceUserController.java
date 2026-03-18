@@ -12,7 +12,6 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/workspace_user")
 public class WorkspaceUserController {
-
     @Autowired
     WorkspaceUserService service;
 
