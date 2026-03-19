@@ -8,20 +8,17 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDateTime;
-import java.util.Date;
-
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class WorkspaceUser {
+public class Task_history {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private Long workspace_id;
-    private Long user_id;
-    private Long workspace_role_id;
-    private LocalDateTime date_invited;
-    private Date date_joined;
+    private Long task_id;
+    private String change_field_name;
+    private String before;
+    private String after;
+    private String date;
 }
