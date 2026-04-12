@@ -1,6 +1,6 @@
 package asror_uz.dto;
 
-import asror_uz.model.Status;
+import asror_uz.entity.StatusType;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,5 +14,5 @@ public class StatusDto {
     private Long project_id;
     private Long category_id;
     private String color;
-    private Status.Type type;
+    private StatusType statusType;
 }

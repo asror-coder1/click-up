@@ -1,5 +1,6 @@
 package asror_uz.model;
 
+import asror_uz.entity.StatusType;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -27,9 +28,5 @@ public class Status {
     private String color;
 
     @Enumerated(EnumType.STRING)
-    private Type type;
-
-    public enum Type {
-        OPEN, CUSTOM, CLOSED
-    }
+    private StatusType statusType;
 }

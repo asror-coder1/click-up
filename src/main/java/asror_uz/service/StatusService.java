@@ -29,7 +29,7 @@ public class StatusService {
         Status status = new Status();
         status.setName(dto.getName());
         status.setColor(dto.getColor());
-        status.setType(dto.getType());
+        status.setStatusType(dto.getStatusType());
 
         if (dto.getSpace_id() != null) {
             spaceRepo.findById(dto.getSpace_id()).ifPresent(status::setSpace);
@@ -59,7 +59,7 @@ public class StatusService {
             Status status = optional.get();
             status.setName(dto.getName());
             status.setColor(dto.getColor());
-            status.setType(dto.getType());
+            status.setStatusType(dto.getStatusType());
 
             if (dto.getSpace_id() != null) {
                 spaceRepo.findById(dto.getSpace_id()).ifPresent(status::setSpace);
